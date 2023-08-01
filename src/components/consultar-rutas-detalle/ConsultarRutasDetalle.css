@@ -1,0 +1,39 @@
+.consultar_rutas_detalle_iframe{
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.map_container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 768px) {
+    /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
+
+    .consultar_rutas_detalle_iframe{
+        width: 100%;
+        height: 100%;
+        margin-top: -50px;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .map_container{
+        width: 100%;
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

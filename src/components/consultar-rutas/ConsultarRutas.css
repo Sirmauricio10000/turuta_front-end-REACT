@@ -1,0 +1,29 @@
+.consultar_rutas_img {
+    width: 100%;
+    height: 100%;
+}
+
+#consultar_rutas_table {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#consultar_rutas_h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+
+
+
+@media(max-width: 768px) {
+    /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
+
+
+    #consultar_rutas_table {
+        align-content: center;
+        width: 350px;
+    }
+}

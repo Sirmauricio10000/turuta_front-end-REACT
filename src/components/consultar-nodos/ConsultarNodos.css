@@ -1,0 +1,67 @@
+/* Estilos para la tabla */
+#consultar_nodos_table {
+    width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Estilos para encabezados y celdas de datos */
+#consultar_nodos_table th,
+#consultar_nodos_table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Estilos para los encabezados */
+#consultar_nodos_table th {
+    background-color: #343a40; 
+    color: #fff; /* Texto en color blanco para contraste */
+    border: #fff px solid;
+}
+
+/* Estilos para filas pares */
+#consultar_nodos_table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para resaltar fila al pasar el cursor */
+#consultar_nodos_table tr:hover {
+    background-color: #c2c2c2;
+}
+
+
+#consultar_nodos_h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.consultar_nodos_item_center {
+    display: grid;
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#consultar_nodos_input_filter {
+    width: 240px;
+    text-align: center;
+}
+
+#consultar_nodos_loading{
+  margin-top: 10%;
+}
+
+
+@media(max-width: 768px) {
+    /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
+
+    #consultar_nodos_table {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

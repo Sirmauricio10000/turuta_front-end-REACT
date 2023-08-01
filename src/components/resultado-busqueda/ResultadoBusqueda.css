@@ -1,0 +1,36 @@
+.resultado_busqueda_main_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resultado_busqueda_bottom_container {
+    margin-top: 5%;
+    width: 25%;
+}
+
+.resultado_busqueda_h1_container {
+    margin-bottom: 3%;
+}
+
+
+@media(max-width: 768px) {
+
+    .resultado_busqueda_bottom_container {
+        margin-top: 5%;
+        width: 90%;
+    }
+
+
+    .resultado_busqueda_main_container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
