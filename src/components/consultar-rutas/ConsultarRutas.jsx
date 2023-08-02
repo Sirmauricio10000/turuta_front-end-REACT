@@ -14,9 +14,9 @@ const images = [ruta100, ruta101, ruta214, ruta313, ruta316, ruta561, ruta562, r
 
 export default function ConsultarRutas() {
   return (
-    <div>
-      <h1 id='consultar_rutas_h1'>Conoce las rutas</h1>
-      <table id='consultar_rutas_table'>
+    <div className='consultar_rutas_main_container'>
+      <h1 id='consultar_rutas_h1'> <i className='bi-geo-fill'></i> Conoce las rutas</h1>
+      <table className='table table-hover consultar_rutas_table'>
         <tbody>
           <tr>
             <td>

@@ -7,7 +7,7 @@ const MostrarParadas = (props) => {
     return (
         <div>
             <h3> {nombre.split('_')[0].toUpperCase() + " " + nombre.split('_')[1]} </h3>
-            <strong style={{ fontSize: '20px' }}> Origen </strong>
+            <strong style={{ fontSize: '20px', color:'#28a745'}}> Origen </strong>
             <table className='table table-striped resultado_busqueda_table_rutas'>
                 <thead>
                     <tr>
@@ -28,7 +28,7 @@ const MostrarParadas = (props) => {
                         </React.Fragment>
                     ))}
                     <tr>
-                        <td colSpan={2}>  <strong style={{ fontSize: '20px' }}> Destino </strong> </td>
+                        <td colSpan={2}>  <strong style={{ fontSize: '20px', color:'#28a745' }}> Destino </strong> </td>
                     </tr>
                 </tbody>
             </table>

@@ -96,6 +96,7 @@ export default function Buscador() {
                                 classNamePrefix="buscador_select"
                                 styles={customStyles}
                                 onChange={handleOrigenChange}
+                                placeholder="Selecciona el origen..."
                             />
                         </div>
                         <div className="buscador-group">
@@ -106,9 +107,10 @@ export default function Buscador() {
                                 classNamePrefix="buscador_select"
                                 styles={customStyles}
                                 onChange={handleDestinoChange}
+                                placeholder="Selecciona el destino..."
                             />
                         </div>
-                        <div className="buscador-group">
+                        <div className="buscador-group" id='buscador_margin'>
                             <input type="submit" className="buscador-button" value="Buscar" onClick={handleBuscarClick} />
                         </div>
                     </div>

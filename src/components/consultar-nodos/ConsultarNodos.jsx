@@ -32,25 +32,30 @@ export default function ConsultarNodos() {
         nodo.toLowerCase().includes(filtro.toLowerCase())
     );
 
+    function showAlertDialog(){
+        alert("Esta función se implementará en proximas actualizaciones,\nGracias por la comprensión.")
+    }
+
     return (
-        <div>
-            <div className='consultar_nodos_item_center'>
+        <div className='consultar_nodos_main_container'>
+            <div className='consultar_nodos_separate_div'>
                 <h1 className='bi-sign-stop-fill'>&nbsp;Paradas</h1>
             </div>
 
 
-            <div className='consultar_nodos_item_center'>
-                <input id='consultar_nodos_input_filter'
+            <div className='consultar_nodos_table_container'>
+                <input
                     type="text"
                     value={filtro}
                     onChange={handleInputChange}
                     placeholder="Buscar por nombre..."
+                    className='consultar_nodos_filter'
                 />
             </div>
 
 
             {isLoading ? ( // Muestra el spinner mientras isLoading es true
-            <div className='spinner-container consultar_nodos_item_center' id='consultar_nodos_loading'>
+            <div className='consultar_nodos_spinner'>
                 <div className="spinner-border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
@@ -58,12 +63,13 @@ export default function ConsultarNodos() {
             ) : (
 
 
-            <div className='consultar_nodos_item_center'>
-                <table id='consultar_nodos_table'>
+            <div className='consultar_nodos_table_container'>
+                <table className='table table-striped consultar_nodos_table'>
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th><i className='bi bi-key-fill'></i> </th>
                             <th>Nombre</th>
+                            <th>Ubicar </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,6 +77,7 @@ export default function ConsultarNodos() {
                             <tr key={index}>
                                 <td>{index}</td>
                                 <td>{nodo}</td>
+                                <td> <button className='btn btn-success' type='button' onClick={showAlertDialog}> <i className='bi-geo-alt-fill'></i> </button> </td>
                             </tr>
                         ))}
                     </tbody>

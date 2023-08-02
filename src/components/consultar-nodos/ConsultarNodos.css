@@ -1,67 +1,53 @@
-/* Estilos para la tabla */
-#consultar_nodos_table {
-    width: 500px;
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-/* Estilos para encabezados y celdas de datos */
-#consultar_nodos_table th,
-#consultar_nodos_table td {
-    padding: 10px;
-    border: 1px solid black;
-}
-
-/* Estilos para los encabezados */
-#consultar_nodos_table th {
-    background-color: #343a40; 
-    color: #fff; /* Texto en color blanco para contraste */
-    border: #fff px solid;
-}
-
-/* Estilos para filas pares */
-#consultar_nodos_table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* Estilos para resaltar fila al pasar el cursor */
-#consultar_nodos_table tr:hover {
-    background-color: #c2c2c2;
-}
-
-
-#consultar_nodos_h1 {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.consultar_nodos_item_center {
-    display: grid;
-    place-items: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#consultar_nodos_input_filter {
-    width: 240px;
+.consultar_nodos_table{
+    width: 60%;
     text-align: center;
 }
 
-#consultar_nodos_loading{
-  margin-top: 10%;
+.consultar_nodos_table_container{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
 }
 
+.consultar_nodos_separate_div{
+    margin-bottom: 2%;
+}
+
+.consultar_nodos_filter{
+    width: 20%;
+    text-align: center;
+}
+
+.consultar_nodos_spinner{
+    margin-top: 10%;
+    size: 30px;
+}
+
+.consultar_nodos_main_container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    flex-direction: column;
+}
 
 @media(max-width: 768px) {
     /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
 
-    #consultar_nodos_table {
+    .consultar_nodos_table{
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
     }
+
+    .consultar_nodos_filter{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
 }

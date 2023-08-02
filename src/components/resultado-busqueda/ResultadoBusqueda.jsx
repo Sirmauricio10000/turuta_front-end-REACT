@@ -34,7 +34,6 @@ export default function ResultadoBusqueda() {
     }, [origen, destino]);
 
 
-
     const mostrarParadas = (camino) => {
         setOpcionSeleccionada('Paradas');
         setCaminoSeleccionado(camino)
@@ -42,6 +41,7 @@ export default function ResultadoBusqueda() {
 
     const mostrarMapa = () => {
         setOpcionSeleccionada('Mapa');
+        alert("Esta función se implementará en proximas actualizaciones,\nGracias por la comprensión.");
     };
 
 
@@ -78,18 +78,18 @@ export default function ResultadoBusqueda() {
                                     <tr key={index}>
                                         <td>
                                             <Link to={`/ruta-detalle/${ruta.ruta.split('_')[1]}`}>
-                                                <button type="button" className="btn btn-dark">
+                                                <button type="button" className="btn btn-success">
                                                     {ruta.ruta.split('_')[0].toUpperCase() + " " + ruta.ruta.split('_')[1]} <i className="bi-bus-front"></i>
                                                 </button>
                                             </Link>
                                         </td>
                                         <td>
-                                            <button type="button" className="btn btn-dark" onClick={() => mostrarParadas(index)}>
+                                            <button type="button" className="btn btn-success" onClick={() => mostrarParadas(index)}>
                                                 Ver paradas <i className="bi-sign-stop"></i>
                                             </button>
                                         </td>
                                         <td>
-                                            <button type="button" className="btn btn-dark" onClick={mostrarMapa}>
+                                            <button type="button" className="btn btn-success" onClick={mostrarMapa}>
                                                 Ver mapa <i className="bi-pin-map"></i>
                                             </button>
                                         </td>
