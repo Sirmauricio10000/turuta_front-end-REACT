@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter  as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
 import Home from './components/Home/Home';
@@ -15,6 +15,7 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
+          <Route path="/turuta_front-end-REACT/" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/paradas" element={<ConsultarNodos />} />
