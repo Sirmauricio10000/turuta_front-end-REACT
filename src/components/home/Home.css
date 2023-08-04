@@ -69,9 +69,13 @@
 
 @media(max-width: 768px) {
 
+    .home_background{
+        height: 80vh;
+    }
+
     .home_main_container {
         text-align: center;
-        width: 80vw;
+        width: 73vh;
         height: auto;
     }
     

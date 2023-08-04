@@ -4,10 +4,17 @@
     height: 70px;
     top: 0;
     left: 0;
+    z-index: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 #navbar li {
     margin-left: 20px;
+}
+
+#main-container i{
+    color: rgba(126, 201, 45, 1);
 }
 
 #logo {

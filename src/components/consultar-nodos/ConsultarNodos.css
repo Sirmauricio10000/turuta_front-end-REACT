@@ -1,6 +1,38 @@
+.consultar_nodos_main_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/background4.jpg');
+    background-size:auto;
+    margin-top: -6vh;
+    margin-bottom: -10vh;
+}
+
+.consultar_nodos_main_container i{
+    color: rgba(126, 201, 45, 1);
+}
+
+
+
 .consultar_nodos_table{
     width: 60%;
     text-align: center;
+    color: aliceblue;
+    margin-bottom: 10vh;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+#consultar_nodos_h1{
+    margin-top: 5vh;
+    color: aliceblue;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
 }
 
 .consultar_nodos_table_container{
@@ -18,23 +50,15 @@
 .consultar_nodos_filter{
     width: 20%;
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 .consultar_nodos_spinner{
     margin-top: 10%;
     size: 30px;
+    margin-bottom: 80vh
 }
 
-.consultar_nodos_main_container {
-    display: flex;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    align-content: center;
-    flex-direction: column;
-}
 
 @media(max-width: 768px) {
     /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
@@ -48,6 +72,14 @@
         width: 80%;
         text-align: center;
         margin-bottom: 5%;
+    }
+
+    .consultar_nodos_main_container{
+        margin-top: -11vh;
+    }
+
+    #consultar_nodos_h1{
+        margin-top: 10vh;
     }
     
 }

@@ -38,8 +38,8 @@ export default function ConsultarNodos() {
 
     return (
         <div className='consultar_nodos_main_container'>
-            <div className='consultar_nodos_separate_div'>
-                <h1 className='bi-sign-stop-fill'>&nbsp;Paradas</h1>
+            <div className='consultar_nodos_separate_div' id='consultar_nodos_h1'>
+                <i className='bi-sign-stop-fill'> </i> Paradas
             </div>
 
 
@@ -64,10 +64,10 @@ export default function ConsultarNodos() {
 
 
             <div className='consultar_nodos_table_container'>
-                <table className='table table-striped consultar_nodos_table'>
+                <table className='table consultar_nodos_table'>
                     <thead>
                         <tr>
-                            <th><i className='bi bi-key-fill'></i> </th>
+                            <th><i className='bi bi-key-fill' style={{fontSize:'20px'}}></i> </th>
                             <th>Nombre</th>
                             <th>Ubicar </th>
                         </tr>
@@ -77,7 +77,7 @@ export default function ConsultarNodos() {
                             <tr key={index}>
                                 <td>{index}</td>
                                 <td>{nodo}</td>
-                                <td> <button className='btn btn-success' type='button' onClick={showAlertDialog}> <i className='bi-geo-alt-fill'></i> </button> </td>
+                                <td> <button className='btn btn-success' type='button' onClick={showAlertDialog}> <i className='bi-geo-alt-fill' style={{color:'white'}}></i> </button> </td>
                             </tr>
                         ))}
                     </tbody>

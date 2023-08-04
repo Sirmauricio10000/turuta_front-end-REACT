@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Buscador.css';
 import { GetNodes } from '../../services/services';
 
@@ -19,7 +19,6 @@ export default function Buscador() {
         }),
         option: (provided, state) => ({
             ...provided,
-            backgroundColor: state.isSelected ? '#1161ee' : 'transparent',
             color: state.isSelected ? '#fff' : '#6a6f8c',
         }),
         singleValue: (provided, state) => ({
@@ -32,7 +31,7 @@ export default function Buscador() {
         }),
         container: (provided) => ({
             ...provided,
-            marginBottom: '20px',
+            marginBottom: '30px',
         }),
         input: (provided) => ({
             ...provided,
@@ -64,14 +63,14 @@ export default function Buscador() {
 
     const [origen, setOrigen] = useState('');
     const [destino, setDestino] = useState('');
-  
+
     const navigate = useNavigate(); // Obtiene el objeto navigate mediante el hook useNavigate
 
     const handleBuscarClick = () => {
-      if (origen && destino) {
-        // Utiliza el objeto navigate para navegar a la nueva ruta
-        navigate(`/resultados/${origen}/${destino}`);
-      }
+        if (origen && destino) {
+            // Utiliza el objeto navigate para navegar a la nueva ruta
+            navigate(`/resultados/${origen}/${destino}`);
+        }
     };
 
     const handleOrigenChange = (selectedOption) => {
@@ -83,37 +82,40 @@ export default function Buscador() {
     };
 
     return (
-        <div className="buscador_login-wrap">
-            <div className="buscador_login-html">
-                <h1 className="buscador-title">Buscador de rutas</h1>
-                <div className="buscador-login-form">
-                    <div className="buscador-sign-in-htm">
-                        <div className="buscador-group">
-                            <label htmlFor="buscador-origen" className="buscador-label">Origen</label>
-                            <Select
-                                id="buscador-origen"
-                                options={nodos}
-                                classNamePrefix="buscador_select"
-                                styles={customStyles}
-                                onChange={handleOrigenChange}
-                                placeholder="Selecciona el origen..."
-                            />
-                        </div>
-                        <div className="buscador-group">
-                            <label htmlFor="buscador-destino" className="buscador-label">Destino</label>
-                            <Select
-                                id="buscador-destino"
-                                options={nodos}
-                                classNamePrefix="buscador_select"
-                                styles={customStyles}
-                                onChange={handleDestinoChange}
-                                placeholder="Selecciona el destino..."
-                            />
-                        </div>
-                        <div className="buscador-group" id='buscador_margin'>
-                            <input type="submit" className="buscador-button" value="Buscar" onClick={handleBuscarClick} />
-                        </div>
+        <div className="buscador_background">
+
+            <div className='buscador_main_container'>
+                <div className='buscador_top_container'>
+                    <i className='bi-search icons'> </i>
+                    <h1 className="buscador_h1">Buscador de rutas</h1>
+                </div>
+
+                <div className="buscador_combo_container">
+                    <div className="busador_origen_container">
+                        <label className="buscador_combo_top_text">Origen</label>
+                        <Select
+                            options={nodos}
+                            classNamePrefix=""
+                            styles={customStyles}
+                            onChange={handleOrigenChange}
+                            placeholder="Selecciona el origen..."
+                        />
                     </div>
+
+                    <div className="busador_destino_container">
+                        <label className="buscador_combo_top_text">Destino</label>
+                        <Select
+                            options={nodos}
+                            classNamePrefix="buscador_select"
+                            styles={customStyles}
+                            onChange={handleDestinoChange}
+                            placeholder="Selecciona el destino..."
+                        />
+                    </div>
+                </div>
+
+                <div className="buscador_button_container">
+                    <input type="submit" className="btn btn-success" value="Buscar" onClick={handleBuscarClick} />
                 </div>
             </div>
         </div>
