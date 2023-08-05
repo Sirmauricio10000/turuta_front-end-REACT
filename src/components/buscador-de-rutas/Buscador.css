@@ -1,18 +1,15 @@
-.buscador_background{
-  align-items: center;
+.buscador{
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-content: center;
-  width: 100vw;
-  height: 85vh;
-  text-align: center;
-  flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/background3.jpg');
-  background-size:cover;
-  margin-top: -6vh;
-  margin-bottom: -10vh;
+  flex-direction: column;
   text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .buscador_main_container{
@@ -24,9 +21,12 @@
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   border-radius: 15%;
+  margin-top: 7%;
+  margin-bottom: 8%;
 }
 
-.buscador_background i{
+
+.buscador i{
   color: rgba(126, 201, 45, 1);
 }
 
@@ -65,28 +65,32 @@
 
 .buscador_button_container{
   width: 100%;
+
 }
 
 .buscador_button_container input{
   width: 25%;
 }
 
-
-@media(max-width: 768px) {
-
-  .buscador_background{
-    margin-top: -7vh;
-    height: 80vh;
+@media(max-width: 1366px) {
+  .buscador_main_container{
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
+}
+
+@media(max-width: 1000px) {
+
 
   .buscador_main_container{
-    width: 95%;
-    margin-top: -5vh;
-    border-radius: 5%;
+    width: 70%;
+    margin-top: 15%;
+    margin-bottom: 20%;
   }
 
   .buscador_combo_container{
-    width: 85%;
+    width: 65%;
     margin-bottom: 3vh;
   }
 
@@ -94,4 +98,16 @@
     width: 35%;
   }
   
+}
+
+
+@media(max-width: 600px) {
+
+
+  .buscador_main_container{
+    width: 95%;
+    margin-top: 30%;
+    margin-bottom: 35%;
+    height: 60vh;
+  }
 }

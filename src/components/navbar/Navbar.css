@@ -53,10 +53,6 @@
     transform: scale(1.1);
 }
 
-#main-container {
-    margin-bottom: 100px;
-}
-
 
 .dropdown-item {
     color: #ffffff; /* Color del texto de los elementos del menú */

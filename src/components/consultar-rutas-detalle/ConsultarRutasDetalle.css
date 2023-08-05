@@ -1,39 +1,58 @@
 .consultar_rutas_detalle_iframe{
-    width: 50%;
+    width: 100%;
     height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: -20px;
-    align-items: center;
+    text-align: center;
 }
 
-.map_container{
-    width: 100%;
-    height: 500px;
+.consultar_ruta_detalle_main_container{
+    align-self: center;
+    width: 60%;
+    height: 75vh;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.consultar_ruta_detalle{
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/about.jpg');
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+@media(max-width: 1300px) {
+    .consultar_ruta_detalle_main_container{
+        margin-top: 10%;
+        width: 85%;
+    }
 
-@media(max-width: 768px) {
-    /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
+}
+
+@media(max-width: 1000px) {
 
     .consultar_rutas_detalle_iframe{
         width: 100%;
         height: 100%;
-        margin-top: -50px;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 
-    .map_container{
-        width: 100%;
-        height: 430px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .consultar_ruta_detalle_main_container{
+        width: 90%;
+        height: 70vh;
+        margin-top: 15%;
+        margin-bottom: 10%;
     }
 
+}
+
+@media(max-width: 720px) {
+    .consultar_ruta_detalle_main_container{
+        margin-top: 20%;
+        margin-bottom: 15%;
+        height: 75vh;
+    }
 }

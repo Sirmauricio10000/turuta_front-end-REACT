@@ -1,20 +1,32 @@
-.consultar_rutas_main_container {
-    align-items: center;
+.consultar_rutas {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-content: center;
-    width: 100vw;
-    height: 150vh;
-    text-align: center;
-    flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/background5.jpg');
-    background-size:cover;
-    margin-top: -5.5vh;
-    margin-bottom: -9vh;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.consultar_rutas_main_container i{
+.consultar_rutas_main_container {
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 8%;
+    width: 60%;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.consultar_rutas_h1{
+    margin-bottom: 5%;
+}
+
+.consultar_rutas i{
     color: rgba(126, 201, 45, 1);
 }
 
@@ -37,35 +49,20 @@
     text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
-#consultar_rutas_h1{
-    color: aliceblue;
-    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
-}
 
-
-
-@media(max-width: 768px) {
-    /* Cambiar el color de fondo del menú desplegable en dispositivos móviles */
+@media(max-width: 1000px) {
 
     .consultar_rutas_main_container{
-        margin-top: -10vh;
-        width: 100%;
-        height: auto;
-    }
-    .consultar_rutas_table {
         width: 90%;
-        height: 90%;
-        margin-bottom: 15vh;
+        margin-top: 20%;
+        margin-bottom: 10%;
     }
 
-    .consultar_rutas_img {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 5px;
+    .consultar_rutas_img{
+        width: 95%;
     }
 
-    #consultar_rutas_h1{
-        margin-top: 15%;
+    .consultar_rutas_table{
+        width: 90%;
     }
 }

@@ -82,7 +82,7 @@ export default function Buscador() {
     };
 
     return (
-        <div className="buscador_background">
+        <div className="buscador">
 
             <div className='buscador_main_container'>
                 <div className='buscador_top_container'>

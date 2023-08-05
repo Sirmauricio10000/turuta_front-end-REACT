@@ -4,14 +4,13 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <div id='main-container'>
-            <footer className="text-center text-white bg-dark" id='footer'>
-                <div className='parent'>
+        <div className='footer_main_container'>
+            <div className='footer_parent bg-dark'>
+                <footer className="text-white bg-dark">
                     <div className="child">
                         <em>Copyright </em>
                         <em className='bi-c-circle'> 2023: Mauricio Avendaño   </em>
                     </div>
-                    <div className='child'></div>
                     <div className='child'>
                         <a href="https://github.com/Sirmauricio10000" target="_blank" className='a'>
                             <em className='bi-github icon em' >  </em>
@@ -26,8 +25,8 @@ export default function Footer() {
                             <em className='bi-briefcase-fill icon em'>  </em>
                         </a>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
 
     )

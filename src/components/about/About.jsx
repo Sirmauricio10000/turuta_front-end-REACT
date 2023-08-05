@@ -51,8 +51,8 @@ const About = () => {
                         </button>
                     ))}
                 </div>
-                <div className='about_button_container'>
-                    <p id='about_bottom_text'>
+                <div className='about_bottom_text_container'>
+                    <p>
                         Nuestra misión es facilitar tu experiencia de transporte en Valledupar y ayudarte a moverte de manera eficiente por la ciudad. ¡Esperamos que disfrutes usando nuestra aplicación y que te sea de gran utilidad en tus viajes diarios!
                     </p>
                 </div>

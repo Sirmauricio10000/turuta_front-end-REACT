@@ -1,8 +1,10 @@
 .home_background {
     background-size: cover;
     background-position: center;
+    top: 0;
+    left: 0;
     width: 100vw;
-    height: 84vh;
+    height: 105.25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,10 +69,10 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
 
     .home_background{
-        height: 80vh;
+        height: 100vh;
     }
 
     .home_main_container {

@@ -5,13 +5,17 @@ const MostrarParadas = (props) => {
     const { ruta, nombre } = props;
 
     return (
-        <div>
-            <h3> {nombre.split('_')[0].toUpperCase() + " " + nombre.split('_')[1]} </h3>
-            <strong style={{ fontSize: '20px', color:'#28a745'}}> Origen </strong>
-            <table className='table table-striped resultado_busqueda_table_rutas'>
+        <div className='mostrar_paradas'>
+            <h3 className='mostrar_paradas_tabla_title'> {nombre.split('_')[0].toUpperCase() + " " + nombre.split('_')[1]} </h3>
+            <table className='resultado_busqueda_table_bottom'>
                 <thead>
                     <tr>
-                        <td colSpan={2}> <i className='bi-arrow-bar-down' style={{ fontSize: '20px' }}></i> </td>
+                        <td></td>
+                        <td style={{ fontSize: '20px', color:'#28a745' }}>Origen</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <i className='bi-arrow-bar-down' style={{ fontSize: '20px' }}></i> </td>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,13 +26,15 @@ const MostrarParadas = (props) => {
                                 <td>{parada}</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}> <i className='bi-arrow-bar-down' style={{ fontSize: '20px' }}></i> </td>
+                                <td></td>
+                                <td> <i className='bi-arrow-bar-down' style={{ fontSize: '20px' }}></i> </td>
                             </tr>
 
                         </React.Fragment>
                     ))}
                     <tr>
-                        <td colSpan={2}>  <strong style={{ fontSize: '20px', color:'#28a745' }}> Destino </strong> </td>
+                        <td></td>
+                        <td>  <strong style={{ fontSize: '20px', color:'#28a745' }}> Destino </strong> </td>
                     </tr>
                 </tbody>
             </table>
