@@ -48,6 +48,11 @@
     margin-bottom: 1%;
 }
 
+.about_button_icon{
+    font-size: 30px;
+    color:aliceblue
+}
+
 .about_button.expanded {
     width: 50vw;
 }
@@ -62,14 +67,17 @@
 
 @media(max-width: 1000px) {
 
+
     .about_button {
-        margin-bottom: 10px;
+        margin-bottom: 1vh;
         width: 50vw;
+        position: relative;
     }
 
     .about_button.expanded {
         width: 80vw;
         height: 35%;
+        z-index: 10;
     }
 
     .about h2 {
@@ -80,17 +88,22 @@
 
     .about {
         width: 100vw;
-        height: 131vh;
-        margin-top: -40px;
-        margin-bottom: -65px;
+        height: auto;
+
     }
 
     .about_main_container {
         width: 80%;
+        margin-top: 20%;
+    }
+
+    .about_main_container.expanded {
+        margin-top: 15vh;
+        margin-bottom: 15vh;
     }
 
     #about_bottom_text{
+        margin-top: 10%;
         text-align: center;
-        width: 100%;
     }
 }

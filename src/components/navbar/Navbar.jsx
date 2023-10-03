@@ -36,25 +36,25 @@ export default function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li className="nav-item">
                 <Link to="/" className="nav-link" onClick={closeNavbar}>
-                  <i className="bi-house icons">  </i> Home
+                  <i className="bi-house icons"></i> Home
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/about" className="nav-link" onClick={closeNavbar}>
-                  <i className="bi-question-circle-fill icons">  </i> Ayuda
+                  <i className="bi-question-circle-fill icons"></i> Ayuda
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/rutas" className="nav-link" onClick={closeNavbar}>
-                  <i className="bi-signpost-split" style={{ fontSize: '20px' }}>  </i> Rutas
+                  <i className="bi-signpost-split" ></i> Rutas
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/paradas" className="nav-link" onClick={closeNavbar}>
-                  <i className="bi-sign-stop-fill" style={{ fontSize: '20px' }}>  </i> Paradas
+                  <i className="bi-sign-stop-fill"></i> Paradas
                 </Link>
               </li>
 

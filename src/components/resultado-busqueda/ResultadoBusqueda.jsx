@@ -41,7 +41,6 @@ export default function ResultadoBusqueda() {
 
     const mostrarMapa = () => {
         setOpcionSeleccionada('Mapa');
-        alert("Esta función se implementará en proximas actualizaciones,\nGracias por la comprensión.");
     };
 
 
@@ -90,27 +89,30 @@ export default function ResultadoBusqueda() {
                                                 </button>
                                             </td>
                                             <td>
-                                                <button type="button" className="btn btn-success consultar_busqueda_button_top" onClick={mostrarMapa}>
-                                                    Ver mapa <i className="bi-pin-map"></i>
-                                                </button>
-                                            </td>
+                                                <button type="button" className="btn btn-success consultar_busqueda_button_top" onClick={() => {
+                                                    mostrarParadas(index);
+                                                    mostrarMapa();
+                                                    }}>
+                                                Ver mapa <i className="bi-pin-map"></i>
+                                            </button>
+                                        </td>
                                         </tr>
                                     ))}
-                                </tbody>
-                            </table>
-                        </>
-                    )
+                            </tbody>
+                        </table>
+            </>
+            )
                 )}
 
-                <div className='resultado_busqueda_bottom_container'>
-                    {opcionSeleccionada === 'Paradas' && caminoSeleccionado !== null ? (
+            <div className='resultado_busqueda_bottom_container'>
+                {opcionSeleccionada === 'Paradas' && caminoSeleccionado !== null ? (
 
-                        <MostrarParadas ruta={rutas[caminoSeleccionado]['camino']} nombre={rutas[caminoSeleccionado]['ruta']} />
-                    ) : null}
-                    {opcionSeleccionada === 'Mapa' && <MostrarMapa />}
-                </div>
+                    <MostrarParadas ruta={rutas[caminoSeleccionado]['camino']} nombre={rutas[caminoSeleccionado]['ruta']} />
+                ) : null}
+                {opcionSeleccionada === 'Mapa' && <MostrarMapa nodes={rutas[caminoSeleccionado]['camino']} />}
             </div>
         </div>
+        </div >
 
     );
 }

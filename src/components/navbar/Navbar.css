@@ -73,38 +73,51 @@
 
 
 /* Estilos para dispositivos móviles con ancho menor o igual a 768px */
-@media(max-width: 768px) {
+@media(max-width: 991px) {
 
     #navbar {
         position: absolute;
-    }
-
-    .navbar-collapse {
-        background-color: #232226;
-        margin-top: 16vw;
-        border-radius: 5%;
-        z-index: 5;
-    }
-
-    .navbar-collapse.collapse.show {
-        max-width: 280px;
-        z-index: 5;
-    }
-
-    .navbar-collapse.collapsing {
-        max-width: 280px;
-        position: absolute;
-        z-index: 5;
-    }
-
-    .navbar-toggler {
-        position: absolute;
-        right: 10px;
-        top: 15px;
+        height: 10vh;
+        width: 100%;
     }
 
     #navbar li {
-        margin-left: 40px;
+        margin-left: 0px;
+    }
+
+    .navbar-collapse {
+        background-color: #212529;
+        margin-top: 15%;
+        border-radius: 5%;
+        z-index: 5;
+        width: 100%; 
+        padding: 20px;
+        padding-left: 15%;
+        font-size: 30px;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+
+    .navbar-collapse i{
+        font-size: 30px;
+        margin-right: 2% ;
+    }
+
+    .navbar-collapse.collapse.show {
+        width: 100%;
+        z-index: 5;
+        font-size: 30px;
+    }
+
+
+    .navbar-toggler {
+        position: absolute;
+        right: 5vw;
+        top: 8px;
+        z-index: 10; 
+        width: 15%;
+        height: 70%;
+        font-size: 30px;
     }
 
     #logo {

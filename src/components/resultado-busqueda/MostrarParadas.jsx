@@ -11,7 +11,7 @@ const MostrarParadas = (props) => {
                 <thead>
                     <tr>
                         <td></td>
-                        <td style={{ fontSize: '20px', color:'#28a745' }}>Origen</td>
+                        <td style={{ fontSize: '20px', color: '#28a745' }}>Origen</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -34,7 +34,7 @@ const MostrarParadas = (props) => {
                     ))}
                     <tr>
                         <td></td>
-                        <td>  <strong style={{ fontSize: '20px', color:'#28a745' }}> Destino </strong> </td>
+                        <td>  <strong style={{ fontSize: '20px', color: '#28a745' }}> Destino </strong> </td>
                     </tr>
                 </tbody>
             </table>
